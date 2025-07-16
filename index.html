@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DEOSPN - Torneo de Microfútbol</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #e65100;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #ffa726;
+    }
+    iframe, img {
+      width: 100%;
+      max-width: 640px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+    .player-stats, .calendar {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .calendar table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .calendar th, .calendar td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: center;
+      color: #fff;
+    }
+    .calendar th {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>DEOSPN - Torneo de Microfútbol</h1>
+</header>
+
+<nav>
+  <a href="#videos">Videos</a>
+  <a href="#fotos">Fotos</a>
+  <a href="#estadisticas">Estadísticas</a>
+  <a href="#calendario">Calendario</a>
+</nav>
+
+<section id="videos">
+  <h2>Videos por Jornada</h2>
+  <h3>Jornada 1 - 15 de Julio</h3>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID1" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
+
+  <h3>Jornada 2 - 16 de Julio</h3>
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID3" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section id="fotos">
+  <h2>Galería de Fotos</h2>
+  <img src="https://via.placeholder.com/640x360?text=Foto+1+Jornada+1" alt="Foto Jornada 1" />
+  <img src="https://via.placeholder.com/640x360?text=Foto+2+Jornada+1" alt="Foto Jornada 1" />
+</section>
+
+<section id="estadisticas">
+  <h2>Estadísticas de Jugadores</h2>
+  <div class="player-stats">
+    <strong>Juan Pérez</strong><br/>
+    Goles: 4 | Asistencias: 1 | Partidos: 2
+  </div>
+  <div class="player-stats">
+    <strong>Esteban Armando</strong><br/>
+    Goles: 3 | Asistencias: 2 | Partidos: 2
+  </div>
+</section>
+
+<section id="calendario">
+  <h2>Calendario de Partidos</h2>
+  <div class="calendar">
+    <table>
+      <tr>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Equipo A</th>
+        <th>Equipo B</th>
+        <th>Estado</th>
+      </tr>
+      <tr>
+        <td>15 Jul</td>
+        <td>3:00 PM</td>
+        <td>Los Tigres</td>
+        <td>Furia Roja</td>
+        <td>Finalizado</td>
+      </tr>
+      <tr>
+        <td>16 Jul</td>
+        <td>4:00 PM</td>
+        <td>Leones FC</td>
+        <td>Los Cracks</td>
+        <td>Programado</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+
+<section id="registro">
+  <h2>Registro de Equipos</h2>
+  <form action="https://formsubmit.co/estebanarmandoespitiatorres@gmail.com" method="POST">
+    <label for="nombre">Nombre del equipo:</label><br />
+    <input type="text" id="nombre" name="nombre" required><br /><br />
+
+    <label for="capitan">Nombre del capitán:</label><br />
+    <input type="text" id="capitan" name="capitan" required><br /><br />
+
+    <label for="telefono">Teléfono de contacto:</label><br />
+    <input type="tel" id="telefono" name="telefono" required><br /><br />
+
+    <label for="correo">Correo electrónico:</label><br />
+    <input type="email" id="correo" name="correo" required><br /><br />
+
+    <input type="hidden" name="_captcha" value="false">
+    <button type="submit">Enviar inscripción</button>
+  </form>
+</section>
+
+</body>
+</html>
